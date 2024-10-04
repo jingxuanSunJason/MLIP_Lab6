@@ -19,6 +19,7 @@ pipeline {
 		python3 -m venv mlip
                 source mlip/bin/activate
                 # TODO Complete the command to run pytest
+		pip install pytest numpy pandas scikit-learn
                 pytest
 
                 //echo 'pytest not runned'
