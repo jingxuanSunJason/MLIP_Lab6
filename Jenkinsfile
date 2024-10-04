@@ -22,8 +22,8 @@ pipeline {
 		pip install pytest numpy pandas scikit-learn
                 pytest
 
-                //echo 'pytest not runned'
-               	//exit 1 #comment this line after implementing Jenkinsfile
+                #echo 'pytest not runned'
+               	#sexit 1 #comment this line after implementing Jenkinsfile
                 '''
 
             }
