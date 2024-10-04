@@ -16,11 +16,12 @@ pipeline {
                 echo 'Test Step: We run testing tool like pytest here'
 
                 # TODO fill out the path to conda here
-                conda init
+                source mlip/bin/activate
                 # TODO Complete the command to run pytest
-                conda create -n mlip python pytest numpy pandas scikit-learn -c conda-forge
-                echo 'pytest not runned'
-                exit 1 #comment this line after implementing Jenkinsfile
+                pytest
+
+                //echo 'pytest not runned'
+               	//exit 1 #comment this line after implementing Jenkinsfile
                 '''
 
             }
